@@ -28,6 +28,14 @@
                             <td>Цена не указана</td>
                             {% endif %}
                         </tr>
+                        <tr>
+                            <td>Дата создания</td>
+                            {% if object.creation_date %}
+                            <td>{{ object.creation_date }}</td>
+                            {% else %}
+                            <td>Дата не указана</td>
+                            {% endif %}
+                        </tr>
                     </table>
                 </div>
                 <div class="card-footer"></div>
